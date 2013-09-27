@@ -1,0 +1,15 @@
+<template name="entryItem">
+  <div class="entry">
+    <div class="entry-content">
+      <h3><a href="{{entryPagePath this}}">{{lastName}}</a><span>{{firstName}}</span></h3>
+      <p>
+        Location: {{location}},
+        Submitted by {{author}},
+        <a href="{{entryPagePath this}}">{{commentsCount}} comments</a>
+      </p>
+    </div>
+    
+    <a href="{{entryPagePath this}}" class="discuss btn">Review</a>
+    {{#if ownEntry}}<a href="{{entryEditPath this}}" class="discuss btn">Edit</a>{{/if}}
+  </div>
+</template>

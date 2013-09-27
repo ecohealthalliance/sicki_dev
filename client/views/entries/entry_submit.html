@@ -1,0 +1,47 @@
+<template name="entrySubmit">
+  <form class="main">
+    <div class="control-group">
+        <label class="control-label" for="lastName">Last Name</label>
+        <div class="controls">
+            <input name="lastName" type="text" value="" placeholder="Last name of surveyee"/>
+        </div>
+    </div>
+
+
+    <div class="control-group">
+        <label class="control-label" for="firstName">First Name</label>
+        <div class="controls">
+            <input name="firstName" type="text" value="" placeholder="First name of surveyee"/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="location">Location</label>
+        <div class="controls">
+            {{> location_drop}}
+        </div>
+        
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="description">Description</label>
+        <div class="controls">
+            <textarea name="description" type="text" value=""/>
+        </div>
+    </div> 
+
+    <div class="control-group">
+        <div class="controls">
+            <input type="submit" value="Submit" class="btn btn-primary"/>
+        </div>
+    </div>
+  </form>
+</template>
+
+<template name="location_drop">
+    <select name="location">
+        <option value="Brazilia">Brazilia</option>
+        <option value="Columbia">Columbia</option>
+        <option value="Bolivia">Bolivia</option>
+    </select>
+</template>
