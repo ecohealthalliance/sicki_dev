@@ -3,5 +3,12 @@
     {{#each entries}}
       {{> entryItem}}
     {{/each}}
+    {{#if entriesReady}}
+      {{#unless allEntriesLoaded}}
+        <a class="load-more" href="#">Load more</a>
+      {{/unless}}
+    {{else}}
+      <div>{{> spinner}}</div>
+    {{/if}}
   </div>
 </template>
