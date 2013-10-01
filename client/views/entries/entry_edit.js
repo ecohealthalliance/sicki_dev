@@ -11,9 +11,12 @@ Template.entryEdit.events({
     var currentEntryId = Session.get('currentEntryId');
 
     var entryProperties = {
-      lastName: $(e.target).find('[name=lastName]').val(),
-      firstName: $(e.target).find('[name=firstName]').val(),
-      location: $(e.target).find('[name=location]').val()
+      eventName: $(event.target).find('[name=eventName]').val(),
+      refEventName: $(event.target).find('[name=refEventName]').val(),
+      disease: $(event.target).find('[name=disease]').val(),
+      refDisease: $(event.target).find('[name=refDisease]').val(),
+      zoonoticType: $(event.target).find('[name=zoonoticType]').val(),
+      refZoonoticType: $(event.target).find('[name=refZoonoticType]').val()
     }
 
     Entries.update(currentEntryId, {$set: entryProperties}, function(error) {

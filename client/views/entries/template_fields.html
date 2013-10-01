@@ -1,0 +1,45 @@
+<template name="fields_divs">
+    <div class="control-group">
+        <label class="control-label" for="eventName">Event Name</label>
+        <div class="controls">
+            <input name="eventName" type="text" value="" placeholder="Unique name for event"/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="refEventName">Ref Event Name</label>
+        <div class="controls">
+            <input name="refEventName" type="text" value="" placeholder="Reference for event name"/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="disease">Disease</label>
+        <div class="controls">
+            <textarea name="disease" type="text" value="" placeholder="Name of disease"/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="refDisease">Disease Reference</label>
+        <div class="controls">
+            <input name="refDisease" type="text" value="" placeholder="Reference for Disease"/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="zoonoticType">Zoonotic Type</label>
+        <div class="controls">
+            {{> zoonotic_drop}}
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="refZoonoticType">Zoonotic type reference</label>
+        <div class="controls">
+            <input name="refZoonoticType" type="text" value="" placeholder="Reference for Zoonotic Type"/>
+        </div>
+    </div>
+
+</template>
+

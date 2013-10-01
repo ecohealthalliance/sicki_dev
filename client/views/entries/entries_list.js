@@ -1,5 +1,5 @@
 Template.entriesList.helpers({
   entries: function() {
-    return Entries.find({}, {sort: {lastName: 1}});
+    return Entries.find({}, {sort: {eventName: 1}});
   }
 });

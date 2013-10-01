@@ -2,10 +2,12 @@ Template.entrySubmit.events({
   'submit form': function(event) {
     event.preventDefault();
     var entry = {
-      lastName: $(event.target).find('[name=lastName]').val(),
-      firstName: $(event.target).find('[name=firstName]').val(),
-      location: $(event.target).find('[name=location]').val(),
-      description: $(event.target).find('[name=description]').val()
+      eventName: $(event.target).find('[name=eventName]').val(),
+      refEventName: $(event.target).find('[name=refEventName]').val(),
+      disease: $(event.target).find('[name=disease]').val(),
+      refDisease: $(event.target).find('[name=refDisease]').val(),
+      zoonoticType: $(event.target).find('[name=zoonoticType]').val(),
+      refZoonoticType: $(event.target).find('[name=refZoonoticType]').val()
     }
     Meteor.call('entry', entry, function(error, id) {
       if (error) {

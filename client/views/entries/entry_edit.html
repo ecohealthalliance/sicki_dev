@@ -1,33 +1,14 @@
 <template name="entryEdit">
   {{#with entry}}
     <form class="main">
-      <div class="control-group">
-          <label class="control-label" for="lastName">Last Name</label>
-          <div class="controls">
-              <input name="lastName" type="text" value="" placeholder="Last name of surveyee"/>
-          </div>
-      </div>
-
+      {{> fields_divs}}
 
       <div class="control-group">
-          <label class="control-label" for="firstName">First Name</label>
-          <div class="controls">
-              <input name="firstName" type="text" value="" placeholder="First name of surveyee"/>
-          </div>
+        <div class="controls">
+            <input type="submit" value="Submit" class="btn btn-primary"/>
+        </div>
       </div>
 
-      <div class="control-group">
-          <label class="control-label" for="location">Location</label>
-          <div class="controls">
-              <input name="location" type="text" value="" placeholder="Location of survey"/>
-          </div>
-      </div>
-
-      <div class="control-group">
-          <div class="controls">
-              <input type="submit" value="Submit" class="btn btn-primary submit"/>
-          </div>
-      </div>
       <hr/>
       <div class="control-group">
           <div class="controls">

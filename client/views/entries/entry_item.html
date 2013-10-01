@@ -1,9 +1,9 @@
 <template name="entryItem">
   <div class="entry">
     <div class="entry-content">
-      <h3><a href="{{entryPagePath this}}">{{lastName}}</a><span>{{firstName}}</span></h3>
+      <h3><a href="{{entryPagePath this}}">{{eventName}}</a><span>{{disease}}</span></h3>
       <p>
-        Location: {{location}},
+        Zoonotic Type: {{zoonoticType}},
         Submitted by {{author}},
         <a href="{{entryPagePath this}}">{{commentsCount}} comments</a>
       </p>
