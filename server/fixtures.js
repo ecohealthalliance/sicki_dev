@@ -38,7 +38,8 @@ if (Entries.find().count() === 0) {
     userId: carla._id,
     author: carla.profile.name,
     submitted: now - 7 * 3600 * 1000,
-    commentsCount: 2
+    commentsCount: 2,
+    upvoters: [], votes: 0
   });
 
 
@@ -68,7 +69,8 @@ if (Entries.find().count() === 0) {
     userId: alexa._id,
     author: alexa.profile.name,
     submitted: now - 10 * 3600 * 1000,
-    commentsCount: 0
+    commentsCount: 0,
+    upvoters: [], votes: 0
   });
 
   Entries.insert({
@@ -81,7 +83,8 @@ if (Entries.find().count() === 0) {
     userId: alex._id,
     author: alex.profile.name,
     submitted: now - 12 * 3600 * 1000,
-    commentsCount: 0
+    commentsCount: 0,
+    upvoters: [], votes: 0
   });
 
   Entries.insert({
@@ -94,7 +97,8 @@ if (Entries.find().count() === 0) {
     userId: elizabeth._id,
     author: elizabeth.profile.name,
     submitted: now - 12 * 3600 * 1000,
-    commentsCount: 0
+    commentsCount: 0,
+    upvoters: [], votes: 0
   });
 
 }
